@@ -42,7 +42,7 @@ export default function Home() {
               itemButton.map((item) => {
                 return (
                   <>
-                    <Button w='100%' as={Link} href={item.link} isExternal colorScheme='facebook' >
+                    <Button key={item} w='100%' as={Link} href={item.link} isExternal colorScheme='facebook' >
                       {item.name}
                     </Button>
                   </>
